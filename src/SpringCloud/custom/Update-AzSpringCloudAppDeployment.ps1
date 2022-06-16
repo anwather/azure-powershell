@@ -30,7 +30,7 @@ PS C:\> {{ Add code here }}
 .Inputs
 Microsoft.Azure.PowerShell.Cmdlets.SpringCloud.Models.ISpringCloudIdentity
 .Outputs
-Microsoft.Azure.PowerShell.Cmdlets.SpringCloud.Models.Api20200701.IDeploymentResource
+Microsoft.Azure.PowerShell.Cmdlets.SpringCloud.Models.Api202201Preview.IDeploymentResource
 .Notes
 COMPLEX PARAMETER PROPERTIES
 
@@ -51,7 +51,7 @@ INPUTOBJECT <ISpringCloudIdentity>: Identity Parameter
 https://docs.microsoft.com/powershell/module/az.SpringCloud/update-azSpringCloudappdeployment
 #>
 function Update-AzSpringCloudAppDeployment {
-[OutputType([Microsoft.Azure.PowerShell.Cmdlets.SpringCloud.Models.Api20200701.IDeploymentResource])]
+[OutputType([Microsoft.Azure.PowerShell.Cmdlets.SpringCloud.Models.Api202201Preview.IDeploymentResource])]
 [CmdletBinding(DefaultParameterSetName='UpdateExpanded', PositionalBinding=$false, SupportsShouldProcess, ConfirmImpact='Medium')]
 param(
     [Parameter(ParameterSetName='UpdateExpanded', Mandatory)]
@@ -103,7 +103,7 @@ param(
 
     [Parameter()]
     [Microsoft.Azure.PowerShell.Cmdlets.SpringCloud.Category('Body')]
-    [Microsoft.Azure.PowerShell.Cmdlets.SpringCloud.Runtime.Info(PossibleTypes=([Microsoft.Azure.PowerShell.Cmdlets.SpringCloud.Models.Api20200701.IDeploymentSettingsEnvironmentVariables]))]
+    [Microsoft.Azure.PowerShell.Cmdlets.SpringCloud.Runtime.Info(PossibleTypes=([Microsoft.Azure.PowerShell.Cmdlets.SpringCloud.Models.Api202201Preview.IDeploymentSettingsEnvironmentVariables]))]
     [System.Collections.Hashtable]
     # Collection of environment variables
     ${EnvironmentVariable},
@@ -120,12 +120,12 @@ param(
     # Required Memory size in GB
     ${MemoryInGb},
 
-    [Parameter()]
-    [ArgumentCompleter([Microsoft.Azure.PowerShell.Cmdlets.SpringCloud.Support.RuntimeVersion])]
-    [Microsoft.Azure.PowerShell.Cmdlets.SpringCloud.Category('Body')]
-    [Microsoft.Azure.PowerShell.Cmdlets.SpringCloud.Support.RuntimeVersion]
-    # Runtime version
-    ${RuntimeVersion},
+    # [Parameter()]
+    # [ArgumentCompleter([Microsoft.Azure.PowerShell.Cmdlets.SpringCloud.Support.RuntimeVersion])]
+    # [Microsoft.Azure.PowerShell.Cmdlets.SpringCloud.Category('Body')]
+    # [Microsoft.Azure.PowerShell.Cmdlets.SpringCloud.Support.RuntimeVersion]
+    # # Runtime version
+    # ${RuntimeVersion},
 
     [Parameter()]
     [Microsoft.Azure.PowerShell.Cmdlets.SpringCloud.Category('Body')]

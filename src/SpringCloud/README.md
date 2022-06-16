@@ -17,7 +17,7 @@ This directory contains the PowerShell module for the SpringCloud service.
 This module was primarily generated via [AutoRest](https://github.com/Azure/autorest) using the [PowerShell](https://github.com/Azure/autorest.powershell) extension.
 
 ## Module Requirements
-- [Az.Accounts module](https://www.powershellgallery.com/packages/Az.Accounts/), version 1.7.4 or greater
+- [Az.Accounts module](https://www.powershellgallery.com/packages/Az.Accounts/), version 2.7.5 or greater
 
 ## Authentication
 AutoRest does not generate authentication code for the module. Authentication is handled via Az.Accounts by altering the HTTP payload before it is sent.
@@ -47,11 +47,11 @@ In this directory, run AutoRest:
 > see https://aka.ms/autorest
 
 ``` yaml
-branch: f595fe8142bff77ddba974fe8ec53522528eed61
+# branch: f595fe8142bff77ddba974fe8ec53522528eed61
 require:
   - $(this-folder)/../readme.azure.noprofile.md
 input-file:
-  - $(repo)/specification/appplatform/resource-manager/Microsoft.AppPlatform/stable/2020-07-01/appplatform.json
+  - https://github.com/Azure/azure-rest-api-specs/blob/main/specification/appplatform/resource-manager/Microsoft.AppPlatform/preview/2022-01-01-preview/appplatform.json
     
 title: SpringCloud
 module-version: 0.1.0

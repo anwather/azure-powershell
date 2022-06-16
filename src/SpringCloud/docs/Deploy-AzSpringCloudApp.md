@@ -23,21 +23,27 @@ Deploy the built jar to service.
 
 ## EXAMPLES
 
-### Example 1: Deploy local compiled jar to service by name.
+### Example 1: {{ Add title here }}
 ```powershell
-Deploy-AzSpringCloudApp -ResourceGroupName 'spring-cloud-rg' -ServiceName 'spring-cloud-service' -AppName 'gateway' -JarPath '/home/user/piggymetrics/gateway/target/gateway.jar'
+{{ Add code here }}
 ```
 
 ```output
-[1/3] Requesting for upload URL
-[2/3] Uploading package to blob
-[3/3] Updating deployment in app account-service (this operation can take a while to complete)
-Name Type
----- ----
-prod Microsoft.AppPlatform/Spring/apps/deployments
+{{ Add output here }}
 ```
 
-Deploy local compiled jar to service by name.
+{{ Add description here }}
+
+### Example 2: {{ Add title here }}
+```powershell
+{{ Add code here }}
+```
+
+```output
+{{ Add output here }}
+```
+
+{{ Add description here }}
 
 ## PARAMETERS
 
@@ -201,7 +207,7 @@ This cmdlet supports the common parameters: -Debug, -ErrorAction, -ErrorVariable
 
 ## OUTPUTS
 
-### Microsoft.Azure.PowerShell.Cmdlets.SpringCloud.Models.Api20200701.IAppResource
+### Microsoft.Azure.PowerShell.Cmdlets.SpringCloud.Models.Api202201Preview.IAppResource
 
 ## NOTES
 

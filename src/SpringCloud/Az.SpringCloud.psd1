@@ -11,7 +11,7 @@
   DotNetFrameworkVersion = '4.7.2'
   RequiredAssemblies = './bin/Az.SpringCloud.private.dll'
   FormatsToProcess = './Az.SpringCloud.format.ps1xml'
-  FunctionsToExport = 'Deploy-AzSpringCloudApp', 'Get-AzSpringCloud', 'Get-AzSpringCloudApp', 'Get-AzSpringCloudAppDeployment', 'New-AzSpringCloud', 'New-AzSpringCloudApp', 'New-AzSpringCloudAppDeployment', 'Remove-AzSpringCloud', 'Remove-AzSpringCloudApp', 'Remove-AzSpringCloudAppDeployment', 'Restart-AzSpringCloudAppDeployment', 'Start-AzSpringCloudAppDeployment', 'Stop-AzSpringCloudAppDeployment', 'Update-AzSpringCloud', 'Update-AzSpringCloudApp', 'Update-AzSpringCloudAppDeployment', '*'
+  FunctionsToExport = 'Deploy-AzSpringCloudApp', 'Get-AzSpringCloudApiPortal', 'Get-AzSpringCloudApp', 'Get-AzSpringCloudAppDeployment', 'Get-AzSpringCloudGateway', 'Get-AzSpringCloudGatewayRouteConfig', 'Get-AzSpringCloudStorage', 'New-AzSpringCloudApiPortal', 'New-AzSpringCloudDeploymentHeapDump', 'New-AzSpringCloudDeploymentThreadDump', 'New-AzSpringCloudGateway', 'New-AzSpringCloudGatewayRouteConfig', 'New-AzSpringCloudStorage', 'Remove-AzSpringCloudApiPortal', 'Remove-AzSpringCloudApp', 'Remove-AzSpringCloudAppDeployment', 'Remove-AzSpringCloudGateway', 'Remove-AzSpringCloudGatewayRouteConfig', 'Remove-AzSpringCloudStorage', 'Restart-AzSpringCloudAppDeployment', 'Set-AzSpringCloudApiPortal', 'Set-AzSpringCloudGateway', 'Set-AzSpringCloudGatewayRouteConfig', 'Set-AzSpringCloudStorage', 'Start-AzSpringCloudAppDeployment', 'Start-AzSpringCloudDeploymentJfr', 'Stop-AzSpringCloudAppDeployment', 'Test-AzSpringCloudApiPortalDomain', 'Test-AzSpringCloudConfigServer', 'Test-AzSpringCloudGatewayDomain', 'Update-AzSpringCloudAppDeployment', '*'
   AliasesToExport = '*'
   PrivateData = @{
     PSData = @{

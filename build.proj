@@ -107,7 +107,6 @@
   </Target>
 
   <Target Name="BuildTools">
-    <Exec Command="$(PowerShellCoreCommandPrefix) &quot;$SdkVersion=(dotnet --list-sdks | Select-String '3.1.\d{3}').Matches[0].Value; dotnet new globaljson --sdk-version $SdkVersion --output $(RepoRoot) --force&quot;" />
     <Exec Command="dotnet publish $(RepoTools)StaticAnalysis/StaticAnalysis.Netcore.csproj -c $(Configuration)" />
   </Target>
 

@@ -36,6 +36,13 @@ steps:
     packageType: sdk
     version: 6.0.x
 
+- task: PowerShell@2
+  displayName: Setup global.json
+  inputs:
+    targetType: inline
+    script: "$SdkVersion=(dotnet --list-sdks | Select-String '3.1.\d{3}').Matches[0].Value; dotnet new globaljson --sdk-version $SdkVersion --output $(RepoRoot) --force"
+    pwsh: true
+    
 - task: DotNetCoreCLI@2
   displayName: Build
   inputs:

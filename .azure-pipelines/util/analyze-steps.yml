@@ -24,13 +24,13 @@ steps:
     pwsh: true
 
 - task: UseDotNet@2
-  displayName: 'Use .NET Core sdk'
+  displayName: 'Use .NET Core sdk 3.1.x'
   inputs:
     packageType: sdk
     version: 3.1.x
 
 - task: UseDotNet@2
-  displayName: Use .NET 6.0
+  displayName: 'Use .NET Core sdk 6.0.x'
   inputs:
     packageType: sdk
     version: 6.0.x

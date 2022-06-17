@@ -286,6 +286,7 @@
   </Target>
 
   <Target Name="AzToolsPredictor">
+    <Exec Command="$(PowerShellCoreCommandPrefix) &quot;$SdkVersion=(dotnet --list-sdks | Select-String '6.\d.\d{3}').Matches[0].Value; dotnet new globaljson --sdk-version $SdkVersion --output $(RepoTools)/Az.Tools.Predictor --force&quot;" />
     <Exec Command='dotnet msbuild $(RepoTools)/Az.Tools.Predictor/build.proj /t:"clean;build;test"' />
   </Target>
 

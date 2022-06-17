@@ -29,7 +29,7 @@
     <Message Text="Build $(ModuleName)" />
     <MakeDir Directories="$(ArtifactFolder)/$(ModuleName)" />
     <Exec Command="dotnet --version" />
-
+    <Exec Command="$(PowerShellCoreCommandPrefix) &quot;$SdkVersion=(dotnet --list-sdks | Select-String '6.\d.\d{3}').Matches[0].Value; dotnet new globaljson --sdk-version $SdkVersion --force&quot;" />
     <Exec Command="dotnet $(BuildAction) $(ModuleSolutionFile) -c $(Configuration)" />
   </Target>
 

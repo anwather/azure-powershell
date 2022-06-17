@@ -161,6 +161,7 @@
     <!-- Build and create package content -->
     <Exec Command="dotnet --version" />
     <Exec Command="dotnet new sln -n Azure.PowerShell -o $(RepoArtifacts) --force" />
+    <Exec Command="$(PowerShellCoreCommandPrefix) &quot;$SdkVersion=(dotnet --list-sdks | Select-String '3.\d.\d{3}').Matches[0].Value; dotnet new globaljson --sdk-version $SdkVersion --force&quot;" />
     <CallTarget Targets="BuildNormalModules" />
 
     <CallTarget Targets="AzToolsPredictor" Condition="$(SubTasks.Contains('Predictor')) OR $(SubTasks.Contains('all'))" />
